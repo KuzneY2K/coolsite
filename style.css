@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 :root {
@@ -110,4 +110,32 @@ body {
 .footer-text p {
     font-family: 'Arial';
     padding: 1rem 0rem;
+}
+
+/* TABLET FRIENDLY */
+
+@media (max-width: 970px) {
+
+    body {
+        overflow: scroll;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #world-image {
+        height: 80%;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .landing-text {
+        width: 70%;
+    }
+
+    .footer-nav-links ul {
+        flex-direction: column;
+    }
 }
