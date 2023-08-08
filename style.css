@@ -40,8 +40,6 @@
     justify-content: end;
 }
 
-/* try this with anchor when you come back */
-
 #lc-link {
     background-color: var(--accent);
     padding: 0.5rem 1rem;
@@ -157,6 +155,8 @@ body {
     .footer-nav-links ul {
         flex-direction: column;
     }
+
+    /* Adds sandwich menu when viewport is less than 970px, looks good on mobile. */
 
     .navlinks ul {
         display: none;
