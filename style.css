@@ -53,6 +53,10 @@
     margin-top: 2rem;
 }
 
+.navlinks li:hover {
+    scale: 1.1;
+}
+
 .navlinks li a {
     text-decoration: none;
     color: var(--s-color);
@@ -162,7 +166,28 @@ body {
         display: none;
     }
 
+    .navlinks.active ul {
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+        align-items: flex-end;
+    }
+
     .menubutton {
         display: flex;
+        opacity: 100%;
+        transition: opacity ease-in-out .5s;
+    }
+
+    .menubutton.active {
+        opacity: 50%;
+    }
+
+    /* Small tweak to menu size, looks nicer */
+
+    @media (max-width: 720px) {
+        .navlinks.active ul {
+            flex-direction: column;
+        }
     }
 }
