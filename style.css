@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+:root {
+    --p-color: #061130;
+    --s-color: #f4f6f8;
+    --accent: #1c4bc4;
+    --accent-two: #fafd61;
+}
+
+.nav {
+    color: var(--s-color);
+}
+
+.navlinks ul {
+    display: flex;
+    justify-content: end;
+}
+
+/* try this with anchor when you come back */
+
+#lc-link {
+    background-color: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.navlinks li {
+    font-family: 'Tahoma';
+    list-style-type: none;
+    padding: 0rem 4rem;
+    margin-top: 2rem;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: var(--s-color);
+}
+
+.logo-container {
+    position: absolute;
+    padding: 0rem 2rem;
+    margin-top: 1rem;
+}
+
+body {
+    background-color: var(--p-color);
+}
+
+#services {
+    font-family: 'Tahoma';
+    color: var(--accent-two);
+}
+
+.main-container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.landing-text {
+    width: 22%;
+    color: var(--s-color);
+}
+
+.landing-text p {
+    margin-top: 2rem;
+    font-family: 'Arial';
+}
+
+.large-heading {
+    font-family: 'Tahoma';
+}
+
+#world-image {
+    object-fit: contain;
+}
+
+.footer-nav {
+    background-color: var(--s-color);
+}
+
+.footer-nav-links {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+.footer-nav-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-nav-links li {
+    padding: 0rem 5rem;
+    font-family: 'Tahoma';
+}
+
+.footer-text {
+    background-color: rgb(204, 212, 218);
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+.footer-text p {
+    font-family: 'Arial';
+    padding: 1rem 0rem;
+}
